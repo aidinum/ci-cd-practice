@@ -24,12 +24,12 @@ spec:
 """
 ) {
     node(POD_LABEL) {
-    //  properties([
-    //    pipelineTriggers([
-    //      [$class: 'GitHubPushTrigger'],
-    //      pollSCM('*/3 * * * *'), // poll every 3 minutes
-    //      ])
-    //    ])
+      properties([
+        pipelineTriggers([
+          [$class: 'GitHubPushTrigger'],
+          pollSCM('*/4 * * * *'), // poll every 3 minutes
+          ])
+        ])
       checkout scm
       container('jenkins-slave') {
         sh '''
