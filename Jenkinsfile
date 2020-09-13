@@ -27,7 +27,6 @@ spec:
       properties([
         pipelineTriggers([
           [$class: 'GitHubPushTrigger'],
-          pollSCM('*/4 * * * *'), // poll every 3 minutes
           ])
         ])
       checkout scm
