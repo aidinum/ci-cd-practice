@@ -1,0 +1,4 @@
+namespace=webapi-dev
+apiversion=1.0
+webversion=1.0
+cluster=eks-dev

@@ -9,7 +9,7 @@ var conString = process.env.DB; // "postgres://username:password@localhost/datab
 app.get('/api/status', function(req, res) {
   pg.connect(conString, function(err, client, done) {
     if(err) {
-      return res.status(500).send('ERROR fetching client from the Pool. Disaster');
+      return res.status(500).send('ERROR fetching the client from the Pool. Disaster');
     }
     client.query('SELECT now() as time', [], function(err, result) {
       //call `done()` to release the client back to the pool
