@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: jenkins-slave
-    image: aidinum/jenkins-slave
+    image: mshaibek/jenkins-slave-312:latest
     command:
     - cat
     tty: true
