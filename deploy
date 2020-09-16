@@ -23,9 +23,9 @@ echo $stage
 cd web
 make build version=$webversion
 make push version=$webversion
-make deploy version=$webversion
+make deploy version=$webversion namespace=$namespace
 
 cd ../api
 make build version=$apiversion
 make push version=$apiversion
-make deploy version=$apiversion
+make deploy version=$apiversion namespace=$namespace
