@@ -1,4 +1,4 @@
 namespace=webapi-staging
-apiversion=1.0
-webversion=1.0
+apiversion=1.11
+webversion=1.11
 cluster=eks-dev
